@@ -11,8 +11,8 @@ $color-facebook: #3b5998;
     }
 }
 
-@include fuente('Montserrat','../fonts/Montserrat-Regular.ttf');
-@include fuente('Raleway', '../fonts/Raleway-Regular.ttf');
+@include fuente('Montserrat','Montserrat-Regular.ttf');
+@include fuente('Raleway', 'Raleway-Regular.ttf');
 
 //herencia
 %margen-superior {
