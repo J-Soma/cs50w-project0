@@ -1,0 +1,147 @@
+$color-base: snow;
+$color-github: #211f1f;
+$color-facebook: #3b5998;
+
+@mixin fuente($font-family, $url) {
+    @font-face {
+        font-family: $font-family;
+        src:
+            local($font-family),
+            url($url);
+    }
+}
+
+@include fuente('Montserrat','/fonts/Montserrat-Regular.ttf');
+@include fuente('Raleway', '/fonts/Raleway-Regular.ttf');
+
+//herencia
+%margen-superior {
+    margin-top: 5px;
+}
+
+%elemento-centrado {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%margen-inferior {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: $color-base;
+
+    //1er selector: clase
+    .fa-lightbulb {
+        color: orange;
+    }
+
+    .fa-github {
+        color: $color-github;
+    }
+
+    .fa-facebook-square {
+        color:$color-facebook;
+    }
+
+    .fa-envelope {
+        color: black;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: Raleway;
+        @extend %margen-superior;
+        @extend %margen-inferior;
+    }
+
+    hr {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: Montserrat;
+        font-size: 16px;
+    }
+
+    //2do selector: last-child
+    p:last-child {
+        @extend %margen-inferior;
+    }
+
+    //3er selector: hover
+    img:hover {
+        box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+    }
+
+    //4to selector: nth-child
+    img:nth-child(1)
+    {
+        border-radius: 60%;
+    }
+
+    input {
+        font-family: Montserrat;
+    }
+
+    label {
+        font-family: Raleway;
+    }
+
+    li {
+        font-family: Montserrat;
+    }
+
+    nav {
+        @extend %margen-inferior;
+    }
+
+    small {
+        font-family: Montserrat;
+    }
+
+    th {
+        font-family: Raleway;
+    }
+
+    td {
+        font-family: Montserrat;
+    }
+
+    //5to selector: id
+    #imagen-principal {
+        @extend %elemento-centrado;
+
+        width: 150px;
+        height: 150px;
+
+        display: block;
+        margin-top: 20px;
+    }
+
+    main {
+        h1 {
+            @extend %margen-inferior;
+        }
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    //Media query
+    @media only screen and (max-width: 768px) {
+        [class*="col-"]
+        {
+          width: 100%;
+        }
+    }
+}
