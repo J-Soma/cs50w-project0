@@ -7,66 +7,90 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/8ee8428958.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" href="images/ffbe-chizuru.png">
 
-    <title>Blog de Soma - Inicio</title>
+    <title>Jeffrey Somarriba - Inicio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/ffbe-chizuru.png" alt="Retrato pixelado de Chizuru, autor: Illugion">
-            Blog de Soma
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#botonesDeNavegacion"
-            aria-controls="botonesDeNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="botonesDeNavegacion">
-            <div class="navbar-nav">
-                <a class="nav-link active" href="index.html">Inicio</a>
-                <a class="nav-link" href="about.html">Acerca de</a>
-                <a class="nav-link" href="contact.html">Contacto</a>
-            </div>
+    <header>
+        <div class="container">
+            <img id="imagen-principal" src="images/ffbe-chizuru.png" alt="Retrato pixelado de Chizuru, autor: Illugion">
+            <h1 class="text-center">Jeffrey Somarriba</h1>
         </div>
+    </header>
+
+    <nav class="nav justify-content-center">
+        <a class="nav-link active" href="index.html">Inicio</a>
+        <a class="nav-link" href="projects.html">Proyectos</a>
+        <a class="nav-link" href="about.html">Acerca de</a>
+        <a class="nav-link" href="contact.html">Contacto</a>
     </nav>
 
     <main>
-        <H1>CONTENIDO VA AQUI</H1>
+        <div class="container">
+            <h1>Hola!</h1>
+            <p>Me llamo Jeffrey Somarriba, y egresé de la carrera de ingeniería de sistemas de la <a href="https://www.uni.edu.ni">Universidad Nacional
+                de
+                Ingeniería de Nicaragua</a> en 2020. Actualmente participo como Course Assistant en el curso CS50xni,
+                impartido
+                por <a href="https://fundacionuno.org/code-fu-es/">Fundación UNO</a> en conjunto con la Universidad Nacional de Ingeniería de Nicaragua. Por otra parte, en
+                el
+                tiempo que no estoy apoyando el curso desempeño la labor de desarrollador de escritorio y aplicaciones
+                móviles utilizando el lenguaje de programación C# y el framework Xamarin.
+            </p>
+            <p>En mi tiempo libre probablemente me encuentre practicando algo de programación, viendo películas o
+                series,
+                sino jugando algún videojuego (principalmente <a href="https://lan.op.gg/summoner/userName=DeadlyLegendary">League of Legends</a>).</p>
+        </div>
     </main>
 
-    <footer class="">
-        <div class="container-fluid text-center bg-dark text-light p-4">
+    <footer>
+        <div class="container">
+            <hr>
             <div class="row">
-                <div class="col-4">
-                    <h3>Columna 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="col-sm-6">
+                    <h2>Sobre el blog</h2>
+                    <p>
+                        Este blog fue creado como Project0 para el curso Web50x.ni
+                    </p>
                 </div>
-                <div class="col-4">
-                    <h3>Columna 2</h3>
+                <div class="col-sm-6">
+                    <h2>Enlaces</h2>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>consectetur adipiscing elit</li>
-                        <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-                        <li>Ut enim ad minim veniam</li>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <h3>Columna 3</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>consectetur adipiscing elit</li>
-                        <li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
-                        <li>Ut enim ad minim veniam</li>
+                        <li>
+                            <a href="https://code-fu.net.ni/staff/#jeffrey-somarriba">
+                                <i class="fas fa-lightbulb"></i>
+                                CS50x.ni
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/J-Soma">
+                                <i class="fab fa-github"></i>
+                                Github
+                            </a>
+                        </li>
+                        <!--Omitido por privacidad en una página pública-->
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-square"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:soma-dev@protonmail.ch">
+                                <i class="far fa-envelope"></i>
+                                soma-dev@protonmail.ch
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="text-center text-light">
-                <p>&copy;Copyright 2021 J-Soma</p>
+            <div class="text-center">
+                <p><a href="https://www.github.com/J-Soma">&copy; Copyright 2021 J-Soma</a></p>
             </div>
         </div>
     </footer>
