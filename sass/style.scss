@@ -7,7 +7,7 @@ $color-facebook: #3b5998;
         font-family: $font-family;
         src:
             local($font-family),
-            url($url);
+            url($url), format('truetype');
     }
 }
 
