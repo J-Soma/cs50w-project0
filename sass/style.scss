@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&family=Raleway&family=Shadows+Into+Light&display=swap');
-
-//Variables de fuentes
-$architects-daughter: 'Architects Daughter', cursive;
-$montserrat: 'Montserrat', sans-serif;
-$raleway: 'Raleway', sans-serif;
-$shadows-into-light: 'Shadows Into Light', cursive;
-
-//Variables de colores
 $color-base: snow;
 $color-github: #211f1f;
 $color-facebook: #3b5998;
+
+@mixin fuente($font-family, $url) {
+    @font-face {
+        font-family: $font-family;
+        src:
+            local($font-family),
+            url($url), format('truetype');
+    }
+}
+
+@include fuente('Montserrat','Montserrat-Regular.ttf');
+@include fuente('Raleway', 'Raleway-Regular.ttf');
 
 //herencia
 %margen-superior {
@@ -54,7 +57,7 @@ body {
     }
 
     h1, h2, h3, h4 {
-        font-family: $raleway;
+        font-family: Raleway;
         @extend %margen-superior;
         @extend %margen-inferior;
     }
@@ -65,7 +68,7 @@ body {
     }
 
     p {
-        font-family: $montserrat;
+        font-family: Montserrat;
         font-size: 16px;
     }
 
@@ -86,15 +89,15 @@ body {
     }
 
     input {
-        font-family: $montserrat;
+        font-family: Montserrat;
     }
 
     label {
-        font-family: $raleway;
+        font-family: Raleway;
     }
 
     li {
-        font-family: $montserrat;
+        font-family: Montserrat;
     }
 
     nav {
@@ -102,15 +105,15 @@ body {
     }
 
     small {
-        font-family: $montserrat;
+        font-family: Montserrat;
     }
 
     th {
-        font-family: $raleway;
+        font-family: Raleway;
     }
 
     td {
-        font-family: $montserrat;
+        font-family: Montserrat;
     }
 
     //5to selector: id
@@ -132,10 +135,6 @@ body {
 
     .container {
         max-width: 700px;
-    }
-
-    .list-group-item {
-        background-color: $color-base;
     }
 
     //Media query
