@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"), url("Montserrat-Regular.ttf"), format("truetype");
-}
-@font-face {
-  font-family: "Raleway";
-  src: local("Raleway"), url("Raleway-Regular.ttf"), format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&family=Raleway&family=Shadows+Into+Light&display=swap");
 body h1, body h2, body h3, body h4 {
   margin-top: 5px;
 }
@@ -41,14 +34,14 @@ body h1 {
   font-size: 36px;
 }
 body h1, body h2, body h3, body h4 {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
 }
 body hr {
   margin-top: 30px;
   margin-bottom: 15px;
 }
 body p {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 body img:hover {
@@ -58,22 +51,22 @@ body img:nth-child(1) {
   border-radius: 60%;
 }
 body input {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 body label {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
 }
 body li {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 body small {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 body th {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
 }
 body td {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 body #imagen-principal {
   width: 150px;
@@ -83,6 +76,9 @@ body #imagen-principal {
 }
 body .container {
   max-width: 700px;
+}
+body .list-group-item {
+  background-color: snow;
 }
 @media only screen and (max-width: 768px) {
   body [class*=col-] {
